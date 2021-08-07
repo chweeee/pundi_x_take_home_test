@@ -1,0 +1,33 @@
+{
+  "name": "pundi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "test:dev": "truffle test --network development --stacktrace",
+    "test:test": "truffle test --network testnet",
+    "migrate:dev": "truffle migrate --network development --reset",
+    "migrate:test": "truffle migrate --network testnet --reset",
+    "merge:token": "sol-merger --export-plugin SPDXLicenseRemovePlugin \"./contracts/MyToken.sol\" compiled",
+    "merge:timelock": "sol-merger --export-plugin SPDXLicenseRemovePlugin \"./contracts/MyTokenTimelock.sol\" compiled",
+    "merge:executor": "sol-merger --export-plugin SPDXLicenseRemovePlugin \"./contracts/Executor.sol\" compiled"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/contracts": "4.2.0",
+    "@openzeppelin/test-helpers": "^0.5.10",
+    "@openzeppelin/truffle-upgrades": "^1.8.0",
+    "@truffle/hdwallet-provider": "1.4.3",
+    "truffle": "^5.4.5",
+    "dotenv": "^10.0.0",
+    "sol-merger": "^3.1.0",
+    "ethers": "^5.4.4",
+    "web3": "^1.5.1"
+  }
+}
