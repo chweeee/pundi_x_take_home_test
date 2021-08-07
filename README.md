@@ -9,8 +9,10 @@ The EOA interacts with the `Token` via the `Executor` contract, which allows the
 
 ## Running Javascript Tests
 
-1. Install dependencies: `yarn install`
-2. Running tests:
+1. Clone the repository: `git clone https://github.com/chweeee/pundi_x_take_home_test.git`
+2. Use node version 14.17.4: `nvm use 14.17.4`
+3. Install project dependencies: `yarn install`
+4. Running tests:
 	- ganache: `npm run test:dev`
 	- ropsten testnet: `npm run test:test`
 ##
